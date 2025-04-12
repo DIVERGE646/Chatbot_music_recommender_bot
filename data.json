@@ -1,0 +1,121 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
+      "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+      "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"],
+      "context": [""]
+    },
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+      "context": [""]
+    },
+    {
+      "tag": "options",
+      "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+      "responses": ["I can guide you through Bollywood song recommendations based on your mood."],
+      "context": [""]
+    },
+    {
+      "tag": "bollywood_romantic",
+      "patterns": ["Recommend some romantic Bollywood songs", "Can you suggest romantic Hindi songs?", "I'm in the mood for love songs from Bollywood", "Suggest me some romantic Hindi music", "romantic songs"],
+      "responses": [
+        "Sure, here are some romantic Bollywood songs: Tum Hi Ho, Raabta, Pehla Nasha, Tujh Mein Rab Dikhta Hai, Agar Tum Saath Ho.",
+        "Romantic Bollywood songs are always delightful! You might like these: Janam Janam, Tum Jo Aaye, Enna Sona, Bolna, Hasi Ban Gaye."
+      ]
+    },
+    {
+      "tag": "bollywood_party",
+      "patterns": ["Recommend Bollywood party tracks", "I need some energetic Bollywood songs", "Any recommendations for upbeat Hindi music?", "Bollywood dance numbers, please", "Recommend some Hindi party songs", "party songs"],
+      "responses": [
+        "Absolutely, here are some lively Bollywood party songs: Bom Diggy Diggy, Morni Banke, Kamariya, Tareefan, Kar Gayi Chull.",
+        "Sure, get ready to dance with these Bollywood party tracks: Badtameez Dil, London Thumakda, Proper Patola, High Rated Gabru, Gallan Goodiyaan."
+      ]
+    },
+    {
+      "tag": "bollywood_sad",
+      "patterns": ["Recommend some sad Bollywood songs", "Can you suggest emotional Hindi songs?", "I need some melancholic music from Bollywood", "Suggest me heart-touching Hindi songs", "songs that express sadness", "sad songs"],
+      "responses": [
+        "Here are some sad Bollywood songs: Channa Mereya, Tujhe Bhula Diya, Tum Hi Ho (Unplugged), Kal Ho Naa Ho, Ae Dil Hai Mushkil.",
+        "Emotional Hindi songs have a deep impact. You might resonate with these: Teri Galiyan, Kabira (Encore), Phir Le Aaya Dil, Tu Jo Mila, Lambiyaan Si Judaiyaan."
+      ]
+    },
+    {
+      "tag": "bollywood_energetic",
+      "patterns": ["Recommend some energetic Bollywood songs", "Can you suggest lively Hindi songs?", "I need high-energy music from Bollywood", "Suggest me some peppy Hindi tracks", "upbeat songs"],
+      "responses": [
+        "Boost your energy with these Bollywood songs: Jai Ho, Ghungroo, Badri Ki Dulhania, Kala Chashma, Tareefan.",
+        "Lively Hindi songs are perfect to lift your spirits! Check these out: Gulaabo, Zingaat, Aankh Marey, Garmi, Radha."
+      ]
+    },
+    {
+      "tag": "bollywood_retro",
+      "patterns": ["Recommend some retro Bollywood songs", "Can you suggest old Hindi songs?", "I'm in the mood for classic Bollywood music", "Suggest me some vintage Hindi tracks", "oldies but goldies", "old songs"],
+      "responses": [
+        "Travel back in time with these classic Bollywood songs: Mere Sapno Ki Rani, Dum Maro Dum, Yeh Sham Mastani, Chura Liya Hai Tumne Jo Dil Ko, Aaj Kal Tere Mere Pyar Ke Charche.",
+        "Old Hindi songs have their charm! Listen to these: Ek Ladki Bheegi Bhaagi Si, O Mere Dil Ke Chain, Pal Pal Dil Ke Paas, Aaja Aaja Main Hoon Pyaar Tera, Yeh Jo Mohabbat Hai."
+      ]
+    },
+    {
+      "tag": "bollywood_patriotic",
+      "patterns": ["Recommend some patriotic Bollywood songs", "Can you suggest Hindi songs about patriotism?", "I'm looking for songs that celebrate India", "Suggest me some nationalistic Hindi tracks", "patriotic songs", "songs for Independence Day/Republic Day"],
+      "responses": [
+        "Feel the patriotism with these Bollywood songs: Ae Watan, Maa Tujhe Salaam, Vande Mataram (from various movies), Bharat Humko Jaan Se Pyaara Hai, Aisa Des Hai Mera.",
+        "Celebrate the spirit of India with these patriotic Hindi songs: Chak De India, Sarfaroshi Ki Tamanna, Des Mere Des Mere, Rang De Basanti, Sandese Aate Hai."
+      ]
+    },
+    {
+      "tag": "bollywood_rock",
+      "patterns": ["rock songs", "Recommend some Bollywood rock songs", "Can you suggest Hindi rock music?", "I'm in the mood for rock music from Bollywood", "Suggest me some Hindi rock tracks", "rocking songs"],
+      "responses": [
+        "Rock to these Bollywood songs: Sadda Haq, Rock On!!, Zinda, Aasman Ke, Phir Se Ud Chala.",
+        "Rock music in Hindi has its own vibe! Listen to these: Main Zaroor Aaunga, Jaago, Jo Bheji Thi Dua, Bandeya."
+      ]
+    },
+    {
+      "tag": "bollywood_other",
+      "patterns": ["Recommend some diverse Bollywood songs", "Can you suggest different types of Hindi songs?", "I'm looking for variety in Hindi music", "Suggest me some unique Hindi songs", "different genre songs"],
+      "responses": [
+        "Explore these diverse Bollywood songs: Zara Zara, Maa, Zindagi Na Milegi Dobara, Ae Watan, Ainvayi Ainvayi.",
+        "Diversity in Hindi music is fascinating! Check out these: Manjha, Khairiyat, Malhari, Aahista, Aao Na."
+      ]
+    },
+    {
+      "tag": "suggest_one_song",
+      "patterns": [
+        "suggest only one",
+        "recommend just one",
+        "give me one song",
+        "only one song",
+        "one song please",
+        "suggest one sad song",
+        "suggest one romantic song",
+        "suggest one energetic song",
+        "suggest one party song",
+        "suggest one patriotic song",
+        "suggest one retro song",
+        "suggest one rock song"
+      ],
+      "responses": [
+        "Here's one for you: Channa Mereya.",
+        "Sure! Try listening to: Tujhe Bhula Diya.",
+        "Of course. You might like: Kabira.",
+        "How about: Tum Hi Ho?"
+      ]
+    }
+  ]
+}
