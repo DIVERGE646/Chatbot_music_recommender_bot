@@ -11,7 +11,8 @@ from nltk.stem import WordNetLemmatizer
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 
 # 🔹 Tell nltk to use the local nltk_data folder
-nltk.data.path.append(os.path.join(os.path.dirname(__file__), "nltk_data"))
+nltk_data_path = os.path.join(os.path.dirname(__file__), "nltk_data")
+nltk.data.path.append(nltk_data_path)
 
 # Initialize Flask app
 app = Flask(__name__)
