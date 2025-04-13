@@ -5,17 +5,23 @@ import json
 import numpy as np
 import random
 import nltk
+import os  # 🔹 ADDED
 
 from nltk.stem import WordNetLemmatizer
 from sklearn.preprocessing import StandardScaler, LabelEncoder
+
+# 🔹 Tell nltk to use the local nltk_data folder
+nltk.data.path.append(os.path.join(os.path.dirname(__file__), "nltk_data"))
 
 # Initialize Flask app
 app = Flask(__name__)
 
 # Initialize NLP tools
 lemmatizer = WordNetLemmatizer()
-nltk.download('punkt')
-nltk.download('wordnet')
+
+# No need to re-download data here if you're using local `nltk_data`
+# nltk.download('punkt')
+# nltk.download('wordnet')
 
 # Load chatbot model and data
 model = load_model('model.keras')
