@@ -32,3 +32,6 @@ dist/
 
 # Logs
 *.log
+
+# Ignore nltk_data directory
+nltk_data/
