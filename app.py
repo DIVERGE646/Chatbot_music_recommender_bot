@@ -14,15 +14,17 @@ from sklearn.preprocessing import StandardScaler, LabelEncoder
 nltk_data_path = os.path.join(os.path.dirname(__file__), "nltk_data")
 nltk.data.path.append(nltk_data_path)
 
+# Check if 'punkt' tokenizer is already downloaded, if not download it
+try:
+    nltk.data.find('tokenizers/punkt')
+except LookupError:
+    nltk.download('punkt')
+
 # Initialize Flask app
 app = Flask(__name__)
 
 # Initialize NLP tools
 lemmatizer = WordNetLemmatizer()
-
-# No need to re-download data here if you're using local `nltk_data`
-# nltk.download('punkt')
-# nltk.download('wordnet')
 
 # Load chatbot model and data
 model = load_model('model.keras')
